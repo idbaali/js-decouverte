@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouton</title>
+</head>
+
+
+<body>
+    <button id="monBouton">Mon Bouton</button>
+    <div id="affichage"></div>
+
+    <script>
+        const unTableau = ["toto", "mamie", "papy", "jolie"];
+        const unTableauVide = [];
+
+        function commentSava() {
+            return "Tout va bien";
+        }
+
+        const bouton = document.getElementById("monBouton");
+        const monAffichage = document.getElementById("affichage")
+
+        bouton.addEventListener("click", function (event) {
+            unTableauVide.push(commentSava());
+            monAffichage.textContent = unTableauVide;
+        })
+
+
+    </script>
+</body>
+
+</html>
